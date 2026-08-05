@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #01231C; /*HEX*/
+    color: #F5F5F5; /*สีตัวอักษร*/
+}
+
+.site-header {
+    border-bottom: 1px solid #235D3A;
+}
+
+.navbar{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin: 0;
+    color: #73C088;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a{
+    color: #A3E4D7;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #D4AC0D;
+}
+
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 64px 32px;
+}
+
+.hero-section {
+    max-width: 720;
+    margin-bottom: 56px;
+    /* color: #A3E4D7; */
+    color: #F5F5F5;
+}
+
+.eyebrow{
+    margin: 0 0 16px 0;
+    color: #73C088;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+h1 {
+    margin: 0 0 24px 0 ;
+    font-size: 52px;
+    line-height: 1.1;
+}
+
+.hero-description {
+    margin: 0 0 32px 0;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #A3E4D7;
+}
+
+.hero-section-button {
+    text-align: right;
+}
+
+.primary-button {
+    display: inline-block;
+    padding: 14px 24px;
+    background-color: #73C088;
+    color: #01231C;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+.hero-section div a:hover {
+    background-color: #D4AC0D;
+}
+
+.features-section {
+    display: flex;
+    gap: 20px;
+}
+
+.features-section article:hover {
+    background-color: #D4AC0D;  
+}
+
+.features-section article:hover h2 {
+    color: black;
+}
+
+.feature-card {
+    flex: 1;
+    padding: 24px;
+    background-color: #235D3A;
+    border-radius: 20px;
+    margin: 0 0 20px 0;
+}
+
+.feature-card h2 {
+    margin: 0 0 12px 0;
+    color: #A3E4D7;
+}
+
+.feature-card p {
+    margin: 0;
+    color: #F5F5F5;
+    line-height: 1.7;
+}
+
+.site-footer {
+    border-top: 1px solid #235D3A;
+    padding: 24px 32px;
+    text-align: center;
+    color: #A3E4D7;
+}
