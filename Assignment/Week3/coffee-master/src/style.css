@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111827;
+  color: white;
+}
+
+.site-header {
+  border-bottom: 1px solid #374151;
+}
+
+.navbar {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 20px 32px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  color: #fbbf24;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: #d1d5db;
+  text-decoration: none;
+}
+
+main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 64px 32px;
+}
+
+.hero-section {
+  margin-bottom: 72px;
+}
+
+.eyebrow {
+  margin: 0 0 16px;
+  color: #fbbf24;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  max-width: 760px;
+  margin: 0 0 24px;
+  font-size: 56px;
+  line-height: 1.1;
+}
+
+.hero-section p {
+  max-width: 680px;
+  color: #d1d5db;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.section-header {
+  max-width: 680px;
+  margin-bottom: 32px;
+}
+
+.section-header h2 {
+  margin: 0 0 16px;
+  font-size: 40px;
+}
+
+.section-header p {
+  margin: 0;
+  color: #d1d5db;
+  line-height: 1.7;
+}
+
+.menu-section {
+  margin-bottom: 72px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.menu-card {
+  padding: 28px;
+  border-radius: 24px;
+  background: #1f2937;
+  border: 1px solid #374151;
+}
+
+.menu-card:hover {
+  border-color: #fbbf24;
+}
+
+.menu-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.menu-category {
+  margin: 0 0 8px;
+  color: #fbbf24;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu-card h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.menu-price {
+  margin: 0;
+  color: #fbbf24;
+  font-weight: bold;
+}
+
+.menu-description {
+  color: #d1d5db;
+  line-height: 1.7;
+}
+
+.quantity-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 24px;
+}
+
+.quantity-control button {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 999px;
+  background: #fbbf24;
+  color: #111827;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.quantity-control span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.order-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.cart-card,
+.summary-card {
+  padding: 28px;
+  border-radius: 24px;
+  background: #1f2937;
+  border: 1px solid #374151;
+}
+
+.cart-card h2,
+.summary-card h2 {
+  margin: 0 0 20px;
+  color: #fbbf24;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+
+  padding: 16px 0;
+  border-bottom: 1px solid #374151;
+}
+
+.cart-item h3 {
+  margin: 0 0 6px;
+}
+
+.cart-item p {
+  margin: 0;
+  color: #d1d5db;
+}
+
+.empty-cart {
+  color: #9ca3af;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #d1d5db;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #4b5563;
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: #111827;
+  color: white;
+  font-size: 16px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+
+  padding: 12px 0;
+  color: #d1d5db;
+  border-bottom: 1px solid #374151;
+}
+
+.final-total {
+  color: #fbbf24;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: none;
+}
+
+#placeOrderButton {
+  width: 100%;
+  margin-top: 24px;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 24px;
+  background: #fbbf24;
+  color: #111827;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#placeOrderButton:hover,
+.quantity-control button:hover {
+  background: #fcd34d;
+}
+
+.order-message {
+  margin: 16px 0 0;
+  line-height: 1.7;
+}
+
+.order-message.error {
+  color: #fca5a5;
+}
+
+.order-message.success {
+  color: #86efac;
+}
+
+.site-footer {
+  border-top: 1px solid #374151;
+  padding: 24px 32px;
+  text-align: center;
+  color: #9ca3af;
+}
+
+@media (max-width: 900px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .order-section {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  main {
+    padding: 40px 20px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}

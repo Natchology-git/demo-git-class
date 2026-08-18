@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Master Order App</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <p class="logo">Coffee Master</p>
+      <a href="#order">Order</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <p class="eyebrow">Premium Coffee Experience</p>
+      <h1>สั่งกาแฟแก้วโปรดของคุณ</h1>
+      <p>
+        เลือกเมนู เพิ่มจำนวน และดูยอดรวมแบบ real-time ด้วย TypeScript
+      </p>
+    </section>
+
+    <section class="menu-section">
+      <div class="section-header">
+        <p class="eyebrow">Menu</p>
+        <h2>เลือกเมนู</h2>
+        <p>กด + เพื่อเพิ่มรายการ และกด - เพื่อลดจำนวน</p>
+      </div>
+
+      <div id="menuGrid" class="menu-grid"></div>
+    </section>
+
+    <section id="order" class="order-section">
+      <div class="cart-card">
+        <h2>Your Order</h2>
+
+        <div id="cartItems" class="cart-items"></div>
+
+        <p id="emptyCartMessage" class="empty-cart">
+          ยังไม่มีรายการใน order
+        </p>
+      </div>
+
+      <div class="summary-card">
+        <h2>Order Summary</h2>
+
+        <label for="customerName">Customer Name</label>
+        <input id="customerName" type="text" placeholder="เช่น Man" />
+
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="subtotal">฿0.00</span>
+        </div>
+
+        <div class="summary-row">
+          <span>Tax 7%</span>
+          <span id="tax">฿0.00</span>
+        </div>
+
+        <div class="summary-row final-total">
+          <span>Total</span>
+          <span id="total">฿0.00</span>
+        </div>
+
+        <button id="placeOrderButton">Place Order</button>
+
+        <p id="orderMessage" class="order-message"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Coffee Master. Built with HTML, CSS and TypeScript.</p>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
