@@ -71,7 +71,7 @@ const taxElement = document.getElementById("tax");
 const totalElement = document.getElementById("total");
 
 const placeOrderButtonElement = document.getElementById("placeOrderButton");
-const customerNameInputElement = document.getElementById("customerNameInput");
+const customerNameInputElement = document.getElementById("customerName");
 const orderMessageElement = document.getElementById("orderMessage");
 
 function formatPrice(price: number): string {
@@ -249,11 +249,12 @@ function calculateTotalItems(): number {
 
 function setupPlaceOrderButton(): void {
   if (!placeOrderButtonElement || !customerNameInputElement || !orderMessageElement) {
+    // console.log("Hello");
     return;
   }
 
   placeOrderButtonElement.addEventListener("click", () => {
-
+    console.log("Hello");
     const input = customerNameInputElement as HTMLInputElement;
     const customerName = input.value.trim();
     const totalItems = calculateTotalItems();
